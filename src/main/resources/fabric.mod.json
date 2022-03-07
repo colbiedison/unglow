@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "unglow",
+  "version": "${version}",
+  "name": "Unglow",
+  "description": "Make glowing signs not glow.",
+  "authors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/unglow/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "us.dison.unglow.client.UnglowClient"
+    ],
+    "main": [
+      "us.dison.unglow.Unglow"
+    ]
+  },
+  "mixins": [
+    "unglow.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
