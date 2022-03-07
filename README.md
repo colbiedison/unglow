@@ -4,3 +4,5 @@ Lots of glow signs in close proximity can cause a huge FPS drop when rendering t
 
 ## Supported (Known) Versions
 - 1.18.2
+
+The mod is extremely simple, so it's likely that it will work on any 1.17+ version.
