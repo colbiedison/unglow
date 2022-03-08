@@ -9,11 +9,6 @@ Lots of glow signs in close proximity can cause a huge FPS drop when rendering t
 ### WITH Unglow
 ![image](https://user-images.githubusercontent.com/25808801/157137548-bd8ed739-8962-4d43-a203-da1dd5d493a2.png)
 
-## Supported (Known) Versions
-- 1.18.x
-
-The mod is extremely simple, so it's likely that it will work on any 1.17+ version.
-
 ## Known Incompatibilies
 - Enhanced Block Entities
   - Disable sign enhancing in EBE's settings for Unglow to work
