@@ -10,16 +10,17 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.text.Text;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.lwjgl.glfw.GLFW;
 import us.dison.unglow.config.UnglowConfig;
 
 import java.io.IOException;
 
-import static us.dison.unglow.Unglow.LOGGER;
-
 @Environment(EnvType.CLIENT)
 public class UnglowClient implements ClientModInitializer {
 
+    public static final Logger LOGGER = LogManager.getLogger();
     private static final UnglowConfig CONFIG = new UnglowConfig(FabricLoader.getInstance().getConfigDir().resolve("unglow.properties"));
 
     private static KeyBinding toggleKeybinding = null;

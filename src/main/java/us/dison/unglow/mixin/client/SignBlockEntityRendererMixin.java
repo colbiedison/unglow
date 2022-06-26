@@ -1,5 +1,7 @@
-package us.dison.unglow.mixin;
+package us.dison.unglow.mixin.client;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.block.entity.SignBlockEntity;
 import net.minecraft.client.render.block.entity.SignBlockEntityRenderer;
 import org.spongepowered.asm.mixin.Mixin;
@@ -7,6 +9,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import us.dison.unglow.client.UnglowClient;
 
+@Environment(EnvType.CLIENT)
 @Mixin(SignBlockEntityRenderer.class)
 public class SignBlockEntityRendererMixin {
 
