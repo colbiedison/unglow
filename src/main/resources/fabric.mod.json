@@ -21,8 +21,8 @@
     "unglow.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.13.3",
+    "fabricloader": ">=0.14.8",
     "fabric": "*",
-    "minecraft": ">=1.17"
+    "minecraft": "~1.19"
   }
 }
