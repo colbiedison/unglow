@@ -1,0 +1,6 @@
+{
+  "category.unglow.keybindings": "Unglow",
+  "key.unglow.toggle": "Toggle sign glow",
+  "message.unglow.disabled": "[Unglow] Enabled glowing signs.",
+  "message.unglow.enabled": "[Unglow] Disabled glowing signs."
+}

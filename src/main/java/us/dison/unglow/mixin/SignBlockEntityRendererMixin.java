@@ -5,6 +5,7 @@ import net.minecraft.client.render.block.entity.SignBlockEntityRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import us.dison.unglow.client.UnglowClient;
 
 @Mixin(SignBlockEntityRenderer.class)
 public class SignBlockEntityRendererMixin {
@@ -15,7 +16,7 @@ public class SignBlockEntityRendererMixin {
                     value = "INVOKE", target = "Lnet/minecraft/block/entity/SignBlockEntity;isGlowingText()Z"
             ))
     private boolean glowingRender(SignBlockEntity instance) {
-        return false;
+        return !UnglowClient.isModEnabled() && instance.isGlowingText();
     }
 
     @Redirect(
@@ -24,7 +25,7 @@ public class SignBlockEntityRendererMixin {
                     value = "INVOKE", target = "Lnet/minecraft/block/entity/SignBlockEntity;isGlowingText()Z"
             ))
     private static boolean glowingColor(SignBlockEntity instance) {
-        return false;
+        return !UnglowClient.isModEnabled() && instance.isGlowingText();
     }
 
 }
